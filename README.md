@@ -18,6 +18,7 @@ A romantic, interactive website celebrating 9 months of love and memories.
 ## Setup Instructions
 
 1. **Upload Images**: Place your memory images in the `images/` folder with these names:
+    - `landing-collage.jpg` - Main landing page background collage
     - `leopolds.jpg` - Leopold's Cafe date
     - `valentines.jpg` - Valentine's Day memory
     - `flea-market.jpg` - Flea Market adventure
