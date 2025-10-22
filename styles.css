@@ -161,9 +161,10 @@ body {
 .landing-title {
     font-family: 'Dancing Script', cursive;
     font-size: 4rem;
-    color: var(--deep-pink);
+    color: #8B008B;
     margin-bottom: 1rem;
-    text-shadow: 2px 2px 4px var(--shadow);
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    font-weight: 700;
 }
 
 .landing-subtitle {
