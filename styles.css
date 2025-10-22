@@ -1,0 +1,323 @@
+/* Import Google Fonts for romantic styling */
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&family=Playfair+Display:wght@400;700&display=swap');
+
+/* CSS Variables for warm color palette */
+:root {
+    --primary-pink: #FFB6C1;
+    --soft-red: #FF9999;
+    --cream: #FFF8DC;
+    --light-pink: #FFE4E1;
+    --deep-pink: #FF69B4;
+    --text-dark: #8B4513;
+    --text-light: #F5DEB3;
+    --shadow: rgba(255, 182, 193, 0.3);
+}
+
+/* Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Playfair Display', serif;
+    background: linear-gradient(135deg, var(--cream) 0%, var(--light-pink) 100%);
+    color: var(--text-dark);
+    overflow-x: hidden;
+    min-height: 100vh;
+}
+
+.section {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem;
+}
+
+/* Password Protection */
+.password-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(255, 248, 220, 0.95);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1000;
+}
+
+.password-container {
+    background: white;
+    padding: 2rem;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px var(--shadow);
+    text-align: center;
+    border: 2px solid var(--primary-pink);
+}
+
+.password-container h2 {
+    font-family: 'Dancing Script', cursive;
+    color: var(--deep-pink);
+    margin-bottom: 1rem;
+}
+
+#password-input {
+    padding: 0.5rem;
+    border: 2px solid var(--primary-pink);
+    border-radius: 5px;
+    margin: 1rem 0;
+    width: 200px;
+    font-size: 1rem;
+}
+
+#password-submit {
+    background: var(--deep-pink);
+    color: white;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+    font-family: 'Playfair Display', serif;
+    transition: background 0.3s ease;
+}
+
+#password-submit:hover {
+    background: var(--soft-red);
+}
+
+.error {
+    color: var(--soft-red);
+    margin-top: 0.5rem;
+}
+
+/* Landing Page */
+.landing {
+    background: linear-gradient(135deg, var(--light-pink) 0%, var(--cream) 50%, var(--primary-pink) 100%);
+    text-align: center;
+}
+
+.landing-title {
+    font-family: 'Dancing Script', cursive;
+    font-size: 4rem;
+    color: var(--deep-pink);
+    margin-bottom: 1rem;
+    text-shadow: 2px 2px 4px var(--shadow);
+}
+
+.landing-subtitle {
+    font-size: 1.5rem;
+    color: var(--text-dark);
+    margin-bottom: 2rem;
+    font-style: italic;
+}
+
+.enter-btn {
+    background: var(--deep-pink);
+    color: white;
+    border: none;
+    padding: 1rem 2rem;
+    border-radius: 25px;
+    font-size: 1.2rem;
+    font-family: 'Playfair Display', serif;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 5px 15px var(--shadow);
+}
+
+.enter-btn:hover {
+    background: var(--soft-red);
+    transform: translateY(-2px);
+    box-shadow: 0 8px 20px var(--shadow);
+}
+
+/* Timeline Section */
+.timeline {
+    background: var(--cream);
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.section-title {
+    font-family: 'Dancing Script', cursive;
+    font-size: 3rem;
+    color: var(--deep-pink);
+    text-align: center;
+    margin-bottom: 3rem;
+    text-shadow: 1px 1px 2px var(--shadow);
+}
+
+.timeline-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    padding: 0 2rem;
+}
+
+/* Memory Cards */
+.memory-card {
+    background: white;
+    border-radius: 15px;
+    box-shadow: 0 8px 25px var(--shadow);
+    overflow: hidden;
+    transition: all 0.3s ease;
+    border: 2px solid var(--primary-pink);
+    opacity: 0;
+    transform: translateY(50px);
+}
+
+.memory-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 35px var(--shadow);
+}
+
+.card-content {
+    padding: 2rem;
+}
+
+.date {
+    font-family: 'Dancing Script', cursive;
+    font-size: 1.5rem;
+    color: var(--deep-pink);
+    margin-bottom: 0.5rem;
+    font-weight: bold;
+}
+
+.memory-card h3 {
+    font-size: 1.3rem;
+    margin-bottom: 1rem;
+    color: var(--text-dark);
+}
+
+.memory-card p {
+    line-height: 1.6;
+    color: var(--text-dark);
+    margin-bottom: 1.5rem;
+}
+
+.image-placeholder {
+    position: relative;
+    height: 200px;
+    background: var(--light-pink);
+    border-radius: 10px;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.image-placeholder img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.placeholder-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: var(--text-dark);
+    font-style: italic;
+    text-align: center;
+}
+
+/* Collage Section */
+.collage {
+    background: linear-gradient(135deg, var(--primary-pink) 0%, var(--soft-red) 100%);
+    color: white;
+}
+
+.photo-collage {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1rem;
+    margin-bottom: 2rem;
+}
+
+.collage-item {
+    height: 200px;
+    background: var(--light-pink);
+    border-radius: 10px;
+    overflow: hidden;
+    position: relative;
+}
+
+.collage-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.final-message {
+    text-align: center;
+    font-size: 1.5rem;
+    font-style: italic;
+    max-width: 600px;
+    margin: 0 auto;
+    font-family: 'Dancing Script', cursive;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .landing-title {
+        font-size: 2.5rem;
+    }
+
+    .landing-subtitle {
+        font-size: 1.2rem;
+    }
+
+    .section-title {
+        font-size: 2rem;
+    }
+
+    .timeline-container {
+        grid-template-columns: 1fr;
+        padding: 0 1rem;
+    }
+
+    .card-content {
+        padding: 1.5rem;
+    }
+
+    .photo-collage {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 480px) {
+    .photo-collage {
+        grid-template-columns: 1fr;
+    }
+
+    .landing-title {
+        font-size: 2rem;
+    }
+
+    .enter-btn {
+        padding: 0.8rem 1.5rem;
+        font-size: 1rem;
+    }
+}
+
+/* Animation Classes */
+.fade-in {
+    opacity: 1 !important;
+    transform: translateY(0) !important;
+}
+
+.heart-animation {
+    animation: heartbeat 1.5s ease-in-out infinite;
+}
+
+@keyframes heartbeat {
+    0%, 100% { transform: scale(1); }
+    50% { transform: scale(1.1); }
+}

@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our 9-Month Journey</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+</head>
+<body>
+    <!-- Password Protection Overlay -->
+    <div id="password-overlay" class="password-overlay">
+        <div class="password-container">
+            <h2>Enter Password</h2>
+            <input type="password" id="password-input" placeholder="Enter password">
+            <button id="password-submit">Enter</button>
+            <p id="password-error" class="error"></p>
+        </div>
+    </div>
+
+    <!-- Landing Page -->
+    <section id="landing" class="section landing">
+        <div class="landing-content">
+            <h1 class="landing-title">Happy 9 Months, My Love</h1>
+            <p class="landing-subtitle">A journey of love, laughter, and unforgettable moments</p>
+            <button id="enter-btn" class="enter-btn">Begin Our Story</button>
+        </div>
+    </section>
+
+    <!-- Timeline Section -->
+    <section id="timeline" class="section timeline">
+        <div class="container">
+            <h2 class="section-title">Our Journey</h2>
+            <div class="timeline-container">
+                <!-- Memory Cards -->
+                <div class="memory-card" data-date="Jan 23">
+                    <div class="card-content">
+                        <div class="date">Jan 23</div>
+                        <h3>Date at Leopold's, Colaba</h3>
+                        <p>The magical moment when I asked you to be my girlfriend. The beginning of our beautiful story.</p>
+                        <div class="image-placeholder">
+                            <img src="images/leopolds.jpg" alt="Leopold's Cafe" onerror="this.style.display='none'">
+                            <div class="placeholder-text">Image: Leopold's Cafe</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="memory-card" data-date="Feb 14">
+                    <div class="card-content">
+                        <div class="date">Feb 14</div>
+                        <h3>First "I Love You"</h3>
+                        <p>Our first Valentine's Day together, filled with love and the words that changed everything.</p>
+                        <div class="image-placeholder">
+                            <img src="images/valentines.jpg" alt="Valentine's Day" onerror="this.style.display='none'">
+                            <div class="placeholder-text">Image: Valentine's Day</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="memory-card" data-date="Apr 6">
+                    <div class="card-content">
+                        <div class="date">Apr 6</div>
+                        <h3>First Time Getting Drunk Together at Flea Market</h3>
+                        <p>Laughing, dancing, and creating memories that we'll cherish forever.</p>
+                        <div class="image-placeholder">
+                            <img src="images/flea-market.jpg" alt="Flea Market" onerror="this.style.display='none'">
+                            <div class="placeholder-text">Image: Flea Market</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="memory-card" data-date="Apr 23">
+                    <div class="card-content">
+                        <div class="date">Apr 23</div>
+                        <h3>First Movie in Theatre</h3>
+                        <p>Sinners by Ryan Coogler - our first theatre experience together. And remembering our first movie ever: Eternal Sunshine of the Spotless Mind.</p>
+                        <div class="image-placeholder">
+                            <img src="images/movie-theatre.jpg" alt="Movie Theatre" onerror="this.style.display='none'">
+                            <div class="placeholder-text">Image: Movie Theatre</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="memory-card" data-date="Jul 3">
+                    <div class="card-content">
+                        <div class="date">Jul 3</div>
+                        <h3>First Scooty Ride Together</h3>
+                        <p>Feeling the wind in our hair, exploring the city on our little adventure.</p>
+                        <div class="image-placeholder">
+                            <img src="images/scooty-ride.jpg" alt="Scooty Ride" onerror="this.style.display='none'">
+                            <div class="placeholder-text">Image: Scooty Ride</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="memory-card" data-date="Jul 5">
+                    <div class="card-content">
+                        <div class="date">Jul 5</div>
+                        <h3>First Concert - Dhanji Live</h3>
+                        <p>The rhythm of the music matching the beat of our hearts.</p>
+                        <div class="image-placeholder">
+                            <img src="images/concert.jpg" alt="Concert" onerror="this.style.display='none'">
+                            <div class="placeholder-text">Image: Concert</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="memory-card" data-date="Sep 19">
+                    <div class="card-content">
+                        <div class="date">Sep 19</div>
+                        <h3>First Liverpool Match Together</h3>
+                        <p>We lost the match, but I won in life by having you by my side.</p>
+                        <div class="image-placeholder">
+                            <img src="images/liverpool-match.jpg" alt="Liverpool Match" onerror="this.style.display='none'">
+                            <div class="placeholder-text">Image: Liverpool Match</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Final Collage Section -->
+    <section id="collage" class="section collage">
+        <div class="container">
+            <h2 class="section-title">Forever Together</h2>
+            <div class="photo-collage">
+                <div class="collage-item">
+                    <img src="images/collage1.jpg" alt="Memory 1" onerror="this.style.display='none'">
+                    <div class="placeholder-text">Collage Image 1</div>
+                </div>
+                <div class="collage-item">
+                    <img src="images/collage2.jpg" alt="Memory 2" onerror="this.style.display='none'">
+                    <div class="placeholder-text">Collage Image 2</div>
+                </div>
+                <div class="collage-item">
+                    <img src="images/collage3.jpg" alt="Memory 3" onerror="this.style.display='none'">
+                    <div class="placeholder-text">Collage Image 3</div>
+                </div>
+                <div class="collage-item">
+                    <img src="images/collage4.jpg" alt="Memory 4" onerror="this.style.display='none'">
+                    <div class="placeholder-text">Collage Image 4</div>
+                </div>
+            </div>
+            <p class="final-message">Every moment with you is a treasure. Here's to many more adventures together. I love you endlessly.</p>
+        </div>
+    </section>
+
+    <!-- Background Music -->
+    <audio id="bg-music" loop>
+        <source src="music/romantic-bg.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+    </audio>
+
+    <script src="script.js"></script>
+</body>
+</html>
