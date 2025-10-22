@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our First Scooty Ride</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+</head>
+<body>
+    <!-- Password Protection Overlay -->
+    <div id="password-overlay" class="password-overlay">
+        <div class="password-container">
+            <h2>Enter Password</h2>
+            <input type="password" id="password-input" placeholder="Enter password">
+            <button id="password-submit">Enter</button>
+            <p class="password-hint">What was the first thing we both collectively hated on?</p>
+            <p id="password-error" class="error"></p>
+        </div>
+    </div>
+
+    <!-- Back Navigation -->
+    <nav class="back-nav">
+        <a href="index.html" class="back-link">← Back to Our Journey</a>
+    </nav>
+
+    <!-- Memory Detail Page -->
+    <section class="memory-detail">
+        <div class="container">
+            <div class="memory-header">
+                <div class="date-badge">Jul 3</div>
+                <h1 class="memory-title">First Scooty Ride Together</h1>
+                <p class="memory-subtitle">Feeling the wind in our hair, exploring the city on our little adventure</p>
+            </div>
+
+            <div class="memory-content">
+                <div class="memory-image">
+                    <img src="images/scooty-ride.jpg" alt="Scooty Ride" onerror="this.style.display='none'">
+                    <div class="placeholder-text">Our Scooty Adventure</div>
+                </div>
+
+                <div class="memory-story">
+                    <h2>Freedom on Two Wheels</h2>
+                    <p>Our first scooty ride together was pure adventure! The feeling of the wind rushing past us, the city unfolding before our eyes, and the excitement of exploring new places on our little vehicle made it unforgettable.</p>
+
+                    <p>I remember how you held on tight, the way we both laughed when we took corners a bit too fast, and how everything felt so alive and free. The scooty became our chariot for countless adventures, but that first ride holds a special place in our hearts.</p>
+
+                    <p>It wasn't just about getting from point A to point B - it was about the journey, the conversation, the shared experience of navigating the city together. Every bump in the road, every traffic light we waited at, became part of our story.</p>
+
+                    <div class="memory-reflections">
+                        <h3>What Made It Magical:</h3>
+                        <ul>
+                            <li>The thrill of the open road</li>
+                            <li>Your arms wrapped around me</li>
+                            <li>Discovering new parts of the city together</li>
+                            <li>The sense of freedom and adventure</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Background Music -->
+    <audio id="bg-music" loop>
+        <source src="music/romantic-bg.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+    </audio>
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our First Movie Theatre Experience</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+</head>
+<body>
+    <!-- Password Protection Overlay -->
+    <div id="password-overlay" class="password-overlay">
+        <div class="password-container">
+            <h2>Enter Password</h2>
+            <input type="password" id="password-input" placeholder="Enter password">
+            <button id="password-submit">Enter</button>
+            <p class="password-hint">What was the first thing we both collectively hated on?</p>
+            <p id="password-error" class="error"></p>
+        </div>
+    </div>
+
+    <!-- Back Navigation -->
+    <nav class="back-nav">
+        <a href="index.html" class="back-link">← Back to Our Journey</a>
+    </nav>
+
+    <!-- Memory Detail Page -->
+    <section class="memory-detail">
+        <div class="container">
+            <div class="memory-header">
+                <div class="date-badge">Apr 23</div>
+                <h1 class="memory-title">First Movie in Theatre</h1>
+                <p class="memory-subtitle">Sinners by Ryan Coogler - our first theatre experience together</p>
+            </div>
+
+            <div class="memory-content">
+                <div class="memory-image">
+                    <img src="images/movie-theatre.jpg" alt="Movie Theatre" onerror="this.style.display='none'">
+                    <div class="placeholder-text">Movie Theatre Experience</div>
+                </div>
+
+                <div class="memory-story">
+                    <h2>Shared Stories on the Big Screen</h2>
+                    <p>Our first movie theatre experience together was watching "Sinners" by Ryan Coogler. The darkened theatre, the anticipation before the movie started, and sharing popcorn while holding hands - it was the perfect date night.</p>
+
+                    <p>I remember how we both got completely immersed in the story, occasionally squeezing each other's hands during intense moments. It reminded us of our first movie ever together: "Eternal Sunshine of the Spotless Mind" - a film that captured the complexity of love and memory in such a beautiful way.</p>
+
+                    <p>Movies have always been special to us - a way to escape into different worlds while staying connected. That night in the theatre wasn't just about watching a film; it was about sharing emotions, thoughts, and creating new memories together.</p>
+
+                    <div class="memory-reflections">
+                        <h3>What Made It Special:</h3>
+                        <ul>
+                            <li>The intimacy of a darkened theatre</li>
+                            <li>Sharing reactions to the story</li>
+                            <li>Remembering our first movie together</li>
+                            <li>The comfort of your hand in mine</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Background Music -->
+    <audio id="bg-music" loop>
+        <source src="music/romantic-bg.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+    </audio>
+
+    <script src="script.js"></script>
+</body>
+</html>

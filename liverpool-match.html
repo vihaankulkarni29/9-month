@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Liverpool Match Together</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+</head>
+<body>
+    <!-- Password Protection Overlay -->
+    <div id="password-overlay" class="password-overlay">
+        <div class="password-container">
+            <h2>Enter Password</h2>
+            <input type="password" id="password-input" placeholder="Enter password">
+            <button id="password-submit">Enter</button>
+            <p class="password-hint">What was the first thing we both collectively hated on?</p>
+            <p id="password-error" class="error"></p>
+        </div>
+    </div>
+
+    <!-- Back Navigation -->
+    <nav class="back-nav">
+        <a href="index.html" class="back-link">← Back to Our Journey</a>
+    </nav>
+
+    <!-- Memory Detail Page -->
+    <section class="memory-detail">
+        <div class="container">
+            <div class="memory-header">
+                <div class="date-badge">Sep 19</div>
+                <h1 class="memory-title">First Liverpool Match Together</h1>
+                <p class="memory-subtitle">We lost the match, but I won in life by having you by my side</p>
+            </div>
+
+            <div class="memory-content">
+                <div class="memory-image">
+                    <img src="images/liverpool-match.jpg" alt="Liverpool Match" onerror="this.style.display='none'">
+                    <div class="placeholder-text">Liverpool Match Day</div>
+                </div>
+
+                <div class="memory-story">
+                    <h2>Love in the Stands</h2>
+                    <p>Our first Liverpool match together was everything I could have hoped for, even though we didn't get the result we wanted on the pitch. The atmosphere, the passion of the fans, and sharing that experience with you made it unforgettable.</p>
+
+                    <p>I remember the excitement before kickoff, the tension during the game, and the disappointment when we lost. But through it all, having you there beside me made every moment special. Football has always been my passion, and sharing it with you for the first time felt like the ultimate connection.</p>
+
+                    <p>The match itself became secondary to the joy of experiencing it together. Your reactions to the goals, the way you cheered with the crowd, and how we celebrated the small victories during the game - these are the memories that matter most.</p>
+
+                    <div class="memory-reflections">
+                        <h3>What Made It Special:</h3>
+                        <ul>
+                            <li>The electric atmosphere of the stadium</li>
+                            <li>Sharing my passion for football with you</li>
+                            <li>Your excitement during the match</li>
+                            <li>Knowing we'd face wins and losses together</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Background Music -->
+    <audio id="bg-music" loop>
+        <source src="music/romantic-bg.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+    </audio>
+
+    <script src="script.js"></script>
+</body>
+</html>

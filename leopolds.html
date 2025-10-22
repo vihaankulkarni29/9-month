@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Leopold's Cafe - Our First Date</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+</head>
+<body>
+    <!-- Password Protection Overlay -->
+    <div id="password-overlay" class="password-overlay">
+        <div class="password-container">
+            <h2>Enter Password</h2>
+            <input type="password" id="password-input" placeholder="Enter password">
+            <button id="password-submit">Enter</button>
+            <p class="password-hint">What was the first thing we both collectively hated on?</p>
+            <p id="password-error" class="error"></p>
+        </div>
+    </div>
+
+    <!-- Back Navigation -->
+    <nav class="back-nav">
+        <a href="index.html" class="back-link">← Back to Our Journey</a>
+    </nav>
+
+    <!-- Memory Detail Page -->
+    <section class="memory-detail">
+        <div class="container">
+            <div class="memory-header">
+                <div class="date-badge">Jan 23</div>
+                <h1 class="memory-title">Date at Leopold's, Colaba</h1>
+                <p class="memory-subtitle">The magical moment when I asked you to be my girlfriend</p>
+            </div>
+
+            <div class="memory-content">
+                <div class="memory-image">
+                    <img src="images/leopolds.jpg" alt="Leopold's Cafe" onerror="this.style.display='none'">
+                    <div class="placeholder-text">Leopold's Cafe, Colaba</div>
+                </div>
+
+                <div class="memory-story">
+                    <h2>The Beginning of Our Beautiful Story</h2>
+                    <p>That evening at Leopold's was magical. The bustling atmosphere of Colaba, the aroma of freshly brewed coffee, and the sound of waves crashing nearby created the perfect backdrop for what would become the start of our incredible journey together.</p>
+
+                    <p>I remember how nervous I was, my heart pounding as I looked into your eyes and asked you to be my girlfriend. The moment you said yes, the world seemed to light up. It was the beginning of something truly special.</p>
+
+                    <p>Leopold's will always hold a special place in our hearts - the place where "we" officially began. Every time we pass by Colaba, we smile knowing this iconic cafe witnessed the start of our love story.</p>
+
+                    <div class="memory-reflections">
+                        <h3>What I Remember Most:</h3>
+                        <ul>
+                            <li>The way you smiled when I asked you</li>
+                            <li>The perfect lighting in the cafe</li>
+                            <li>How natural everything felt between us</li>
+                            <li>The excitement of our future together</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Background Music -->
+    <audio id="bg-music" loop>
+        <source src="music/romantic-bg.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+    </audio>
+
+    <script src="script.js"></script>
+</body>
+</html>

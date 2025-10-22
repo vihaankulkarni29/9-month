@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dhanji Live Concert</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+</head>
+<body>
+    <!-- Password Protection Overlay -->
+    <div id="password-overlay" class="password-overlay">
+        <div class="password-container">
+            <h2>Enter Password</h2>
+            <input type="password" id="password-input" placeholder="Enter password">
+            <button id="password-submit">Enter</button>
+            <p class="password-hint">What was the first thing we both collectively hated on?</p>
+            <p id="password-error" class="error"></p>
+        </div>
+    </div>
+
+    <!-- Back Navigation -->
+    <nav class="back-nav">
+        <a href="index.html" class="back-link">← Back to Our Journey</a>
+    </nav>
+
+    <!-- Memory Detail Page -->
+    <section class="memory-detail">
+        <div class="container">
+            <div class="memory-header">
+                <div class="date-badge">Jul 5</div>
+                <h1 class="memory-title">First Concert - Dhanji Live</h1>
+                <p class="memory-subtitle">The rhythm of the music matching the beat of our hearts</p>
+            </div>
+
+            <div class="memory-content">
+                <div class="memory-image">
+                    <img src="images/concert.jpg" alt="Concert" onerror="this.style.display='none'">
+                    <div class="placeholder-text">Dhanji Live Concert</div>
+                </div>
+
+                <div class="memory-story">
+                    <h2>Music That Moved Our Souls</h2>
+                    <p>The Dhanji concert was electric! The energy of the crowd, the powerful music filling the air, and sharing that experience with you made it one of our most memorable nights together.</p>
+
+                    <p>I remember how we danced and sang along to every song, completely lost in the moment. The bass thumping through our bodies seemed to match the rhythm of our hearts beating together. It was pure joy, pure connection.</p>
+
+                    <p>Concerts have a way of bringing people closer, and that night was no exception. We created memories that will last forever - the songs we danced to, the way we looked at each other during the quiet moments, and the excitement of experiencing live music together for the first time.</p>
+
+                    <div class="memory-reflections">
+                        <h3>What Made It Unforgettable:</h3>
+                        <ul>
+                            <li>The electric atmosphere of live music</li>
+                            <li>Dancing without inhibition</li>
+                            <li>The shared excitement in your eyes</li>
+                            <li>Music that became part of our story</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Background Music -->
+    <audio id="bg-music" loop>
+        <source src="music/romantic-bg.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+    </audio>
+
+    <script src="script.js"></script>
+</body>
+</html>

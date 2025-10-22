@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our First Valentine's Day</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+</head>
+<body>
+    <!-- Password Protection Overlay -->
+    <div id="password-overlay" class="password-overlay">
+        <div class="password-container">
+            <h2>Enter Password</h2>
+            <input type="password" id="password-input" placeholder="Enter password">
+            <button id="password-submit">Enter</button>
+            <p class="password-hint">What was the first thing we both collectively hated on?</p>
+            <p id="password-error" class="error"></p>
+        </div>
+    </div>
+
+    <!-- Back Navigation -->
+    <nav class="back-nav">
+        <a href="index.html" class="back-link">← Back to Our Journey</a>
+    </nav>
+
+    <!-- Memory Detail Page -->
+    <section class="memory-detail">
+        <div class="container">
+            <div class="memory-header">
+                <div class="date-badge">Feb 14</div>
+                <h1 class="memory-title">First "I Love You"</h1>
+                <p class="memory-subtitle">Our first Valentine's Day together, filled with love and the words that changed everything</p>
+            </div>
+
+            <div class="memory-content">
+                <div class="memory-image">
+                    <img src="images/valentines.jpg" alt="Valentine's Day" onerror="this.style.display='none'">
+                    <div class="placeholder-text">Our First Valentine's Day</div>
+                </div>
+
+                <div class="memory-story">
+                    <h2>The Power of Three Little Words</h2>
+                    <p>Our first Valentine's Day was filled with the magic of new love. The air was crisp, the city was decorated with hearts and flowers, and everywhere we looked, there were reminders of love and romance.</p>
+
+                    <p>I remember the moment I first said "I love you" - my heart was racing, and when you said it back, it felt like the world stopped for just a moment. Those three words changed everything between us, deepening our connection and making our relationship even more beautiful.</p>
+
+                    <p>That Valentine's Day wasn't about expensive gifts or grand gestures. It was about the simple joy of being together, sharing our feelings, and knowing that what we had was real and true.</p>
+
+                    <div class="memory-reflections">
+                        <h3>What Made It Special:</h3>
+                        <ul>
+                            <li>The first time we exchanged "I love you"</li>
+                            <li>Walking hand in hand through decorated streets</li>
+                            <li>The comfort of being completely ourselves</li>
+                            <li>Knowing our love was mutual and deep</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Background Music -->
+    <audio id="bg-music" loop>
+        <source src="music/romantic-bg.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+    </audio>
+
+    <script src="script.js"></script>
+</body>
+</html>
