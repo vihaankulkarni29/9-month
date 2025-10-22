@@ -1,5 +1,5 @@
 // Password Protection
-const password = "ourlove2024"; // Change this to your desired password
+const password = "Ram Mandir"; // Change this to your desired password
 const passwordOverlay = document.getElementById('password-overlay');
 const passwordInput = document.getElementById('password-input');
 const passwordSubmit = document.getElementById('password-submit');

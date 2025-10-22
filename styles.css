@@ -89,6 +89,14 @@ body {
     background: var(--soft-red);
 }
 
+.password-hint {
+    color: var(--text-dark);
+    font-size: 0.9rem;
+    margin-top: 0.5rem;
+    font-style: italic;
+    text-align: center;
+}
+
 .error {
     color: var(--soft-red);
     margin-top: 0.5rem;
