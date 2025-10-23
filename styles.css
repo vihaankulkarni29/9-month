@@ -257,7 +257,7 @@ body {
 }
 
 .memory-card h3 {
-    font-size: 1.5rem;
+    font-size: 1.3rem;
     margin-bottom: 1rem;
     color: var(--text-dark);
     font-weight: 600;
@@ -274,10 +274,10 @@ body {
 }
 
 .memory-card p {
-    line-height: 1.7;
+    line-height: 1.6;
     color: var(--text-dark);
     margin-bottom: 1.5rem;
-    font-size: 1.1rem;
+    font-size: 1rem;
 }
 
 .image-placeholder {
