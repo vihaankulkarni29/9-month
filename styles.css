@@ -323,11 +323,12 @@ body {
 }
 
 .collage-item {
-    height: 200px;
+    height: 300px;
     background: var(--light-pink);
-    border-radius: 10px;
+    border-radius: 15px;
     overflow: hidden;
     position: relative;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
 }
 
 .collage-item img {

@@ -15,6 +15,7 @@ passwordInput.addEventListener('keypress', (e) => {
 function checkPassword() {
     if (passwordInput.value === password) {
         passwordOverlay.style.display = 'none';
+        startBackgroundMusic();
         initWebsite();
     } else {
         passwordError.textContent = 'Incorrect password. Try again.';
@@ -155,15 +156,22 @@ function initWebsite() {
     // Set volume to 50%
     bgMusic.volume = 0.5;
 
-    // Auto-play music on first user interaction
-    document.addEventListener('click', () => {
+    // Auto-play music immediately after password entry
+    function startBackgroundMusic() {
         if (!musicPlaying) {
             bgMusic.play().catch(e => {
                 console.log('Auto-play prevented by browser. Music will play on next interaction.');
+                // Fallback: try to play on next click
+                document.addEventListener('click', () => {
+                    if (!musicPlaying) {
+                        bgMusic.play().catch(e => console.log('Music play failed'));
+                        musicPlaying = true;
+                    }
+                }, { once: true });
             });
             musicPlaying = true;
         }
-    }, { once: true });
+    }
 
     // Add floating hearts animation
     createFloatingHearts();
