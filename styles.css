@@ -309,6 +309,12 @@ body {
     text-align: center;
 }
 
+/* Miya Kebabs Section */
+.miya-kebabs {
+    background: linear-gradient(135deg, #8B4513 0%, #D2691E 100%);
+    color: white;
+}
+
 /* Collage Section */
 .collage {
     background: linear-gradient(135deg, var(--primary-pink) 0%, var(--soft-red) 100%);
