@@ -527,6 +527,33 @@ body {
     }
 }
 
+/* Persistent Background Collage */
+.persistent-bg-collage {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    pointer-events: none;
+}
+
+.persistent-bg-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    filter: blur(8px) brightness(0.3) opacity(0.15);
+}
+
+/* Video Support for Memory Cards */
+.memory-video {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 10px;
+    margin-bottom: 1rem;
+}
+
 /* Animation Classes */
 .fade-in {
     opacity: 1 !important;
