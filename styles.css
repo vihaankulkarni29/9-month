@@ -33,7 +33,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 2rem;
+    padding: 2rem 1rem;
 }
 
 /* Password Protection */
@@ -216,8 +216,8 @@ body {
     display: grid;
     grid-template-columns: 1fr;
     gap: 2rem;
-    padding: 0 2rem;
-    max-width: 800px;
+    padding: 0 1rem;
+    max-width: 900px;
     margin: 0 auto;
 }
 
@@ -282,13 +282,14 @@ body {
 
 .image-placeholder {
     position: relative;
-    height: 200px;
+    height: 350px;
     background: var(--light-pink);
     border-radius: 10px;
     overflow: hidden;
     display: flex;
     align-items: center;
     justify-content: center;
+    margin: 1.5rem 0;
 }
 
 .image-placeholder img {
@@ -542,13 +543,13 @@ body {
     width: 100%;
     height: 100%;
     object-fit: cover;
-    filter: blur(8px) brightness(0.3) opacity(0.15);
+    filter: blur(6px) brightness(0.4) opacity(0.25);
 }
 
 /* Video Support for Memory Cards */
 .memory-video {
     width: 100%;
-    height: 250px;
+    height: 350px;
     object-fit: cover;
     border-radius: 10px;
     margin-bottom: 1rem;
