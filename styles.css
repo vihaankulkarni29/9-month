@@ -215,9 +215,9 @@ body {
 .timeline-container {
     display: grid;
     grid-template-columns: 1fr;
-    gap: 2rem;
-    padding: 0 1rem;
-    max-width: 900px;
+    gap: 3rem;
+    padding: 0 0.5rem;
+    max-width: 1000px;
     margin: 0 auto;
 }
 
@@ -282,14 +282,15 @@ body {
 
 .image-placeholder {
     position: relative;
-    height: 350px;
+    height: 500px;
     background: var(--light-pink);
-    border-radius: 10px;
+    border-radius: 15px;
     overflow: hidden;
     display: flex;
     align-items: center;
     justify-content: center;
-    margin: 1.5rem 0;
+    margin: 2rem 0;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
 }
 
 .image-placeholder img {
@@ -543,16 +544,17 @@ body {
     width: 100%;
     height: 100%;
     object-fit: cover;
-    filter: blur(6px) brightness(0.4) opacity(0.25);
+    filter: blur(4px) brightness(0.5) opacity(0.35);
 }
 
 /* Video Support for Memory Cards */
 .memory-video {
     width: 100%;
-    height: 350px;
+    height: 500px;
     object-fit: cover;
-    border-radius: 10px;
+    border-radius: 15px;
     margin-bottom: 1rem;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
 }
 
 /* Animation Classes */
