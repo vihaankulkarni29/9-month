@@ -15,7 +15,12 @@ passwordInput.addEventListener('keypress', (e) => {
 function checkPassword() {
     if (passwordInput.value === password) {
         passwordOverlay.style.display = 'none';
-        startBackgroundMusic();
+        // Start music immediately
+        const bgMusic = document.getElementById('bg-music');
+        bgMusic.volume = 0.5;
+        bgMusic.play().catch(e => {
+            console.log('Auto-play prevented by browser');
+        });
         initWebsite();
     } else {
         passwordError.textContent = 'Incorrect password. Try again.';
