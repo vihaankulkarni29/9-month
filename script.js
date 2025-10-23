@@ -152,6 +152,9 @@ function initWebsite() {
     const bgMusic = document.getElementById('bg-music');
     let musicPlaying = false;
 
+    // Set volume to 50%
+    bgMusic.volume = 0.5;
+
     // Auto-play music on first user interaction
     document.addEventListener('click', () => {
         if (!musicPlaying) {
